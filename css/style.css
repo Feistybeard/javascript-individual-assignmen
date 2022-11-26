@@ -1,0 +1,34 @@
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  overflow-y: hidden;
+  transition: 0.5s;
+  color: #fff;
+}
+.overlay__content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.overlay__close-btn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+.main__planets {
+  list-style: none;
+}
+
+.show {
+  height: 100%;
+}
