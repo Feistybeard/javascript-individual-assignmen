@@ -8,19 +8,52 @@
   <title>Javascript-individul-assignment</title>
 </head>
 <body>
-  <section class="main">
-    <ul class="main__planets">
-
-    </ul>
-  </section>
-  <section class="overlay">
-    <article class="overlay__content">
-      <h2 class="planet-name"></h2>
-      <h3 class="planet-latin-name"></h3>
-      <p class="planet-description"></p>
-      <button class="overlay__close-btn">&times;</button>
-    </article>
-  </section>
+  <div class="wrapper">
+    <section class="loading">
+      <h1 class="main__heading">SOLSYSTEMET</h1>
+      <p class="main__under-heading">SOLARIS</p>
+    </section>
+    <section class="main">
+      <h1 class="main__heading">SOLSYSTEMET</h1>
+      <p class="main__under-heading">SOLARIS</p>
+      <ul class="main__planets"></ul>
+    </section>
+    <section class="logo">
+      <img src="./img/logo.png" alt="zocom logotype">
+    </section>
+    <section class="overlay">
+      <article class="overlay__content">
+        <div class="overlay__planet"></div>
+        <div class="overlay__planet--saturn hide"></div>
+        <h2 class="overlay__planet-name"></h2>
+        <h3 class="overlay__planet-latin-name"></h3>
+        <p class="overlay__planet-description"></p>
+        <hr class="overlay__seperator" />
+        <section class="overlay__characteristics">
+          <article class='overlay__characteristics-group'>
+            <h4 class="overlay__planet-characteristic">OMKRETS</h4>
+            <p class="overlay__planet-circumference"></p>
+          </article>
+          <article class='overlay__characteristics-group'>
+            <h4 class="overlay__planet-characteristic">KM FRÅN SOLEN</h4>
+            <p class="overlay__planet-distance"></p>
+          </article>
+          <article class='overlay__characteristics-group'>
+            <h4 class="overlay__planet-characteristic">MAX TEMPERATUR</h4>
+            <p class="overlay__planet-max-temperature"></p>
+          </article>
+          <article class='overlay__characteristics-group'>
+            <h4 class="overlay__planet-characteristic">MIN TEMPERATUR</h4>
+            <p class="overlay__planet-min-temperature"></p>
+          </article>
+        </section>
+        <hr class="overlay__seperator" />
+        <h4 class="overlay__planet-characteristic">MÅNAR</h4>
+        <p class="overlay__planet-moons"></p>
+        <button class="overlay__close-btn">&times;</button>
+      </article>
+    </section>
+  </div>
   <script type='module' src="./js/index.js"></script>
 </body>
 </html>

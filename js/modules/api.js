@@ -1,3 +1,6 @@
+// Här finns all kod som har med själva API:et att göra. Hämtar api-nyckel och sedan hämtar den
+// all data som sedan exporteras ut från modulen.
+
 const BASE_URL = 'https://fathomless-shelf-54969.herokuapp.com';
 const API_KEY = await getApiKey();
 const planetsData = await getAllPlanets();
