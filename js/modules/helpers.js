@@ -5,7 +5,7 @@
 import { planetsData } from "../modules/api.js";
 const planetProps = {
   colors: ['#FFD029', '#888888', '#E7CDCD', '#428ED5', '#EF5F5F', '#E29468', '#C7AA72', '#C9D4F1', '#7A91A7'],
-  size: ['1278px', '14px', '26px', '28px', '14px', '188px', '144px', '66px', '66px']
+  size: ['600px', '14px', '26px', '28px', '14px', '188px', '144px', '66px', '66px']
 };
 const allEl = {
   loading: document.querySelector('.loading'),
@@ -48,16 +48,17 @@ function createPlanet(planet) {
       ${planet.id == 6 ? '<div class=\'main__planet-gfx\'><div class=\'main_planet-gfx--saturn\'></div></div>' : '<div class=\'main__planet-gfx\'></div>'}
     </li>
   `);
-
+  // margin-left: ${planet.id == 1 ? '150px' : '0'};
+  // padding: 0;
   const css = `
     background-color: ${planetProps.colors[planet.id]};
     height: ${planetProps.size[planet.id]};
     width: ${planetProps.size[planet.id]};
     border-radius: 50%;
-    translate: ${planet.id == 0 ? '-70vw' : '0'};
+    translate: ${planet.id == 0 ? '-190%' : '0'};
     position: ${planet.id == 0 ? 'absolute' : 'auto'};
-    margin-left: ${planet.id == 1 ? '150px' : '0'};
-    padding: 0;
+
+ 
     cursor: pointer;
     box-shadow: 0px 0px 250px rgba(255, 208, 41, 0.2);
   `;
