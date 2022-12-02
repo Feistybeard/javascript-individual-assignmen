@@ -94,7 +94,7 @@ function createBackgroundStars() {
     let star = htmlFromTemplate(`
       <div class='star'></div>
     `);
-
+    
     let css = `
       background-color: #fff;
       opacity: ${starStrength == 0 ? 0.25 : starStrength == 1 ? 0.50 : 1};
@@ -126,7 +126,6 @@ function createSaturnRing() {
 createPlanets(planetsData);
 createBackgroundStars();
 createSaturnRing();
-console.log(allEl.loading.childNodes[1]);
 setTimeout(() => {
   allEl.loading.classList.add('hide');
   allEl.loading.childNodes[1].classList.add('disable');
